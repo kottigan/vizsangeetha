@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./print.css" media="print">
+<link rel="stylesheet" type="text/css" href="./swara.css" >
+    <title>Visualize sangeeta with Polar Area Diagram</title>
+</head>
+<body>
+<div class="noprint">
+Size:
+<select id="size">
+<option value="150">150</option>
+<option selected="selected" value="160">160</option>
+<option value="200">200</option>
+<option value="250">250</option>
+<option value="300">300</option>
+<option value="400">400</option>
+<option value="500">500</option>
+<option value="600">600</option>
+</select>
+Divisions:
+<select id="axis">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option selected="selected" value="8">8</option>
+</select>
+Range from:
+<select id="fromswara">
+<option value="0">b</option>
+<option value="0.5">ls</option>
+<option value="1">lr</option>
+<option value="1.5">lg</option>
+<option value="2">lm</option>
+<option value="2.5">lp</option>
+<option value="3">ld</option>
+<option value="3.5">ln</option>
+<option selected="selected" value="4">s</option>
+<option value="4.5">r</option>
+<option value="5">g</option>
+<option value="5.5">m</option>
+<option value="6">p</option>
+<option value="6.5">d</option>
+<option value="7">n</option>
+<option value="7.5">hs</option>
+<option value="8">hr</option>
+<option value="8.5">hg</option>
+<option value="9">hm</option>
+<option value="9.5">hp</option>
+<option value="10">hd</option>
+<option value="10.5">hn</option>
+</select>
+To:
+<select id="toswara">
+<option value="0">b</option>
+<option value="0.5">ls</option>
+<option value="1">lr</option>
+<option value="1.5">lg</option>
+<option value="2">lm</option>
+<option value="2.5">lp</option>
+<option value="3">ld</option>
+<option value="3.5">ln</option>
+<option value="4">s</option>
+<option value="4.5">r</option>
+<option value="5">g</option>
+<option value="5.5">m</option>
+<option value="6">p</option>
+<option value="6.5">d</option>
+<option value="7">n</option>
+<option selected="selected" value="7.5">hs</option>
+<option value="8">hr</option>
+<option value="8.5">hg</option>
+<option value="9">hm</option>
+<option value="9.5">hp</option>
+<option value="10">hd</option>
+<option value="10.5">hn</option>
+</select>
+swaras:
+<span data-tip="swaras with space,allowed (s..,hs..,ls..), h=higher , l=lower eg: s g hs m ld"><input type="text" id="swaras" name="swaras"></span>
+<button type="button" onclick="checkViz()">Click to draw</button>
+<a href="javascript:window.print()" style="float:right;"><img src="printer.ico" alt="print this page" id="print-button" /></a>
+</div>
+    <div id="radial"></div>
+    <script type="text/javascript" src="d3.v2.min.js"></script>
+    <script type="text/javascript" src="PolarAreaDiagram.js"></script>
+    <script type="text/javascript">
+                
+    </script>
+</body> 
+</html>
